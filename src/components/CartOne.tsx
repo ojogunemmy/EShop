@@ -1,13 +1,34 @@
 import React from 'react'
 import { FaMinus,FaPlus } from 'react-icons/fa'
 import {MdDelete} from 'react-icons/md'
-
-const style:React.CSSProperties ={
+const del:React.CSSProperties ={
 
     visibility:'visible',
     fontSize:'14px',
     fontWeight:'bolder',
     position:'relative',
+    color:'red',
+    right:'5%',
+    top:'-10%',
+    backgroundColor:'#dddddd',
+    height:'20px',
+    width:'30px',
+    display:'flex',
+    padding:'2px',
+    zIndex:'-1',
+    justifyContent:'center',
+    alignItems:'center'
+}
+
+
+
+const style:React.CSSProperties ={
+
+    visibility:'visible',
+    fontSize:'var(--fontsize)',
+    fontWeight:'bolder',
+    position:'relative',
+    zIndex:'-1',
     color:'red',
     right:'4%',
     bottom:'10%',
@@ -35,38 +56,40 @@ const nostyle:React.CSSProperties ={
 
 function CartOne(props:any){
     return(
+        <>
         <div className='cartOne'>
             
-            <img src={props.image===''?'':props.image} alt="null" />
+            <img src={props.image===''?'':props.image} style={{zIndex:'-1'}} alt="null" />
             <p style={props.discount===0?nostyle:style}>{props.discount===0?'no discount':props.discount}%</p>
 
             <div className='prod'>
 
             <p className='pn'>{props.productName===''?'Product name':props.productName}</p>
-            <p className=''><strong>#</strong>{props.price===0?'unit Price':props.price}</p>
+            <p className='pn'><strong>#</strong>{props.price===0?'unit Price':props.price}</p>
             </div>
           
            
             <div className='quanView'>
                
-                <p> Total</p>
-                <h4 style={{fontSize:'var(--fontsize)'}}><strong>#</strong>{props.price===0?'1000000000000':props.price}</h4>
+                <p className='pn'> Total</p>
+                <p className='pn'><strong>#</strong>{props.price===0?'1000000000000':props.price}</p>
             
             <div className='quan'>
-                <FaMinus size={18} className='minusIcon' style={{backgroundColor:'#dddddd',borderRadius:'50%',width:'20px',height:'20px',padding:'5px'}}/>
+                <FaMinus size={24} className='minusIcon' style={{borderRadius:'50%',width:'20px',height:'20px',padding:'5px'}}/>
                 <input type='text'/>
-                <FaPlus size={18} className='plusIcon' style={{backgroundColor:'#dddddd',borderRadius:'50%',width:'20px',height:'20px',padding:'5px'}}/>
+                <FaPlus size={24} className='plusIcon' style={{borderRadius:'50%',width:'20px',height:'20px',padding:'5px'}}/>
             </div>
                
             </div>
+           
+            <MdDelete size={10} color='red' style={del}/>
             
-            <div className='delete'>
-            <MdDelete size={28} color='red' className='deleteIcon' style={{backgroundColor:'#dddddd',borderRadius:'100%',padding:'5px'}}/>
-            </div>
-            
-
-                    
         </div>
+           
+        
+       
+        </>
+        
     )
 }
 

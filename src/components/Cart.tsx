@@ -22,8 +22,8 @@ function CartLoaded(props:any){
         <div className='cartView'>
 
             <div className='cart'>
-                <h3 style={{margin:'var(--margin)'}}>Cart</h3>
-                <CartOne image={pic} productName='Raid' price={500} discount= {-5}/>
+                <h3 style={{marginBottom:'var(--margin)'}}>Cart</h3>
+                <CartOne image={pic} productName='Raid ttsyydsgshhghdghghghsdhghsshhhsdhgdghg' price={500} discount= {-5}/>
             </div>
             <div className='checkout'>
             <h3>Summary</h3>

@@ -12,7 +12,7 @@ function Footer():JSX.Element{
                 <form action="" method="post" style={{width:'100%'}}>
                 
                 <input type="text" name="email" style={{width:'100%'}} placeholder="Enter your Email" />
-                <input type="submit" style={{width:'100%'}} value="Subscribe" />
+                <input type="submit" style={{width:'100%',borderRadius:'0px'}} value="Subscribe" />
                 </form>
                
 

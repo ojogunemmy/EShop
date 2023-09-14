@@ -80,6 +80,7 @@
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
+    padding: 5px;
 
    
 
@@ -91,8 +92,14 @@
     margin: 3px;
     padding: 0px;
 }
-.cartOne .prod .pn{
-    font-size: calc(var(--fontsize)*0.8);
+ .pn{
+    margin-bottom: 5px;
+    font-size:var(--fontsize);
+    line-break: anywhere;
+    line-height: 15px;
+    text-align: justify;
+
+
 
 }
 .cartOne .prod .pp{
@@ -109,6 +116,7 @@
    
 }
 .cartOne .quanView{
+    padding: 5px;
     width: 20%;
     height: 100px;
     margin-top: var(--margin);
@@ -125,6 +133,7 @@
 
 .cartOne .quanView .quan{
     margin-top:20px;
+    width:100px;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -151,6 +160,7 @@
     height: 25px;
     font-size: calc(var(--fontsize)*0.5);
     text-align: center;
+    border: 1;
 
 }
 
@@ -395,10 +405,11 @@
 }
 
 .cartOne .prod{
-    width:70%;
+    width:80%;
     margin-top: var(--margin);
     margin-left: 0px;
     display: flex;
+    word-wrap: break-word;
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;

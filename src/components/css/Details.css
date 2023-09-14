@@ -31,6 +31,7 @@
 
  .reviews {
     margin-top: var(--margin);
+    width: 100%;
 }
 
  .reviews ul {
@@ -77,13 +78,13 @@
     flex-direction: row;
     justify-content: flex-start;
     align-items: center;
-    width: 60%;
+    width: 100%;
     margin-bottom: var(--margin);
 }
 
 .data div div img {
-    height: 100px;
-    width: 90px;
+    height: 50px;
+    width: 50px;
     margin-right: var(--margin);
     box-shadow: 0px 0px 5px 3px #dddddd;
 }
@@ -155,12 +156,12 @@
     }
     
     .data div .body {
-        width: 30%;
+        width: 100%;
         height: 100%;
     }
     .data div .body img {
-        width: 40px;
-        height: 40px;
+        width: 20px;
+        height: 20px;
     }
     .prodData {
  
@@ -272,8 +273,8 @@
         height: 100%;
     }
     .data div .body img {
-        width: 40px;
-        height: 40px;
+        width: 30px;
+        height: 30px;
     }
     .prodData {
     justify-content: flex-start;
