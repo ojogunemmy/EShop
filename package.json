@@ -1,7 +1,7 @@
 {
   "name": "eshop",
   "version": "0.1.0",
-  "homepage": "https://ojogunemmy.github.io/EShop",
+  "homepage": "https://ojogunemmy.github.io/ESHOP",
   "private": true,
   "dependencies": {
     "-": "^0.0.1",
@@ -28,7 +28,8 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
+    "deploy": "gh-pages -b main -d build",
+    "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {

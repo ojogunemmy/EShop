@@ -138,7 +138,8 @@ window.addEventListener('resize',()=>{
     
 
       <Routes>
-        <Route path='/EShop' element={<Home/>} ></Route>
+        <Route path='/' element={<Home/>} ></Route>
+        <Route path='/ESHOP' element={<Home/>} ></Route>
         <Route path='*' element={<NotFound/>} ></Route>
         <Route path='/Signup'  element={<SignupPage/>} ></Route>
         <Route path='/Signin'  element={<SigninPage/>} ></Route>\

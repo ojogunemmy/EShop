@@ -44,6 +44,7 @@ function Promotion(props:any){
             <>
 
 
+
               {
                
                 timer()
