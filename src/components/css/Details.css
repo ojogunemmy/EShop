@@ -1,0 +1,378 @@
+.topDetails {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+  
+}
+
+ .breadcrumbs {
+    margin-top: 0px;
+    margin-bottom: var(--margin);
+    font-size: var(--fontsize);
+    width: 100%;
+    text-align: justify;
+}
+
+ .moreD {
+    margin-top: var(--margin);
+}
+
+ .moreD * {
+    margin-bottom: 2px;
+}
+
+ .moreD div {
+    font-size: var(--fontsize);
+    text-align: justify;
+    padding: 5px;
+    border-radius: 2px;
+}
+
+ .reviews {
+    margin-top: var(--margin);
+}
+
+ .reviews ul {
+    padding: 5px;
+    text-align: justify;
+    border-radius: 2px;
+}
+
+ .reviews ul li {
+    list-style-type: none;
+    font-size: var(--fontsize);
+    margin-bottom: 2px;
+}
+
+
+
+.data {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
+.data .prodD {
+    width: 70%;
+    margin: var(--margin);
+}
+
+.data .prodD .main img {
+    height: 100%;
+    width: 100%;
+}
+
+.data .prodD .main {
+    width: 100%;
+    height: 100%;
+    
+}
+
+.data div .body {
+    margin-top: calc(var(--margin) * 2);
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    width: 60%;
+    margin-bottom: var(--margin);
+}
+
+.data div div img {
+    height: 100px;
+    width: 90px;
+    margin-right: var(--margin);
+    box-shadow: 0px 0px 5px 3px #dddddd;
+}
+
+.delivery {
+    width: 40%;
+    margin: var(--margin);
+}
+
+.delivery div {
+    font-size: var(--fontsize);
+    margin-bottom: var(--margin);
+    margin-top: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.delivery div div {
+    margin: calc(var(--margin) * 0.9);
+    border-radius: 2px;
+    text-align: justify;
+}
+
+.delivery div > h3 {
+    margin-top: 0px;
+    margin: calc(var(--margin) * 0.6);
+}
+
+.prodData {
+    width: 40%;
+    padding-left: var(--margin);
+    padding-top: 0px;
+    display: flex;
+    text-align: justify;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    flex-direction: column;
+    margin: var(--margin);
+}
+
+.prodData div {
+    margin-bottom: var(--margin);
+    font-size: var(--fontsize);
+}
+
+.prodData div:nth-child(1) {
+    font-size: var(--fontsize);
+    text-align: justify;
+}
+
+
+@media  (max-width:576px) {
+    .data {
+        width: 100%;
+        flex-direction:column;
+    }
+    .data .prodD {
+        width: 55%;
+        margin: 0px;
+    }
+    
+   
+    
+    .data .prodD .main {
+        width: 100%;
+        object-fit: fill;
+    }
+    
+    .data div .body {
+        width: 30%;
+        height: 100%;
+    }
+    .data div .body img {
+        width: 40px;
+        height: 40px;
+    }
+    .prodData {
+ 
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+    margin: 0px;
+    padding-bottom: var(--padding);
+    }
+    
+    .prodData div {
+        margin-bottom: 8px;
+        font-size: var(--fontsize);
+       
+    
+    }
+    
+    .prodData div:nth-child(1) {
+        white-space:break-spaces;
+    }
+    
+    .delivery {
+        width: 100%;
+        margin: 0px;
+     
+       
+    }
+    
+    
+    .delivery div div {
+        margin: 0px;
+        border-radius: 2px;
+        text-align: justify;
+    }
+    
+    .delivery div > h3 {
+     
+        margin-bottom: var(--margin);
+        margin-top: var(--margin);
+        margin-right: 0px;
+        margin-left: 0px;
+    }
+    
+    .moreD {
+        margin-top: var(--margin);
+    }
+    
+     .moreD * {
+        margin-bottom: 2px;
+    }
+    
+     .moreD div {
+        font-size: var(--fontsize);
+        text-align: justify;
+        padding: 0px;
+        border-radius: 2px;
+    }
+    
+     .reviews {
+        margin-top: var(--margin);
+    }
+    
+     .reviews ul {
+        padding: 0px;
+        text-align: justify;
+        border-radius: 2px;
+    }
+    
+     .reviews ul li {
+        list-style-type: none;
+        font-size: var(--fontsize);
+        margin-bottom: 2px;
+    }
+    
+    
+    
+    .topDetails {
+        width: 100%;
+        flex-direction: column;
+      
+    }
+
+ 
+  }
+  
+  
+  
+  
+  @media  (max-width:900px) {
+    .data {
+        width: 100%;
+        flex-direction:row;
+    }
+    .data .prodD {
+        width: 55%;
+        margin: 0px;
+    }
+    
+   
+    
+    .data .prodD .main {
+        width: 100%;
+        object-fit: cover;
+        
+    }
+    
+    .data div .body {
+        width: 30%;
+        height: 100%;
+    }
+    .data div .body img {
+        width: 40px;
+        height: 40px;
+    }
+    .prodData {
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 40%;
+    margin: 0px;
+    padding-left: var(--padding);
+    padding-bottom: var(--padding);
+    }
+    
+    .prodData div {
+        margin-bottom: 8px;
+        font-size: var(--fontsize);
+       
+    
+    }
+    
+    .prodData div:nth-child(1) {
+        white-space:break-spaces;
+    }
+    
+    .delivery {
+        width: 100%;
+        margin: 0px;
+     
+       
+    }
+    
+    
+    .delivery div div {
+        margin: 0px;
+        border-radius: 2px;
+        text-align: justify;
+    }
+    
+    .delivery div > h3 {
+     
+        margin-bottom: var(--margin);
+        margin-top: var(--margin);
+        margin-right: 0px;
+        margin-left: 0px;
+    }
+    
+    .moreD {
+        margin-top: var(--margin);
+    }
+    
+     .moreD * {
+        margin-bottom: 2px;
+    }
+    
+     .moreD div {
+        font-size: var(--fontsize);
+        text-align: justify;
+        padding: 0px;
+        border-radius: 2px;
+    }
+    
+     .reviews {
+        margin-top: var(--margin);
+    }
+    
+     .reviews ul {
+        padding: 0px;
+        text-align: justify;
+        border-radius: 2px;
+    }
+    
+     .reviews ul li {
+        list-style-type: none;
+        font-size: var(--fontsize);
+        margin-bottom: 2px;
+    }
+    
+    
+    
+    .topDetails {
+        width: 100%;
+        flex-direction: column;
+      
+    }
+    
+    
+  }
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  @media (min-width:0px) {
+    .container{
+      overflow: scroll;
+    }
+    
+  }

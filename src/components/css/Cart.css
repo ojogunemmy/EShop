@@ -1,0 +1,493 @@
+
+.cart{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items:flex-start;
+    min-height: 400px;
+    width: 60%;
+    text-align: justify;
+    color: var(--dark);
+    
+
+}
+
+
+.cart *{
+
+    margin-bottom:var(--margin);
+}
+
+.cartView{
+    display: flex;
+    flex-direction: row;
+    justify-content:flex-start;
+    align-items: flex-start;
+    min-height: 400px;
+    width: 100%;
+    text-align: justify;
+    padding: var(--margin);
+    color: var(--dark);
+
+
+
+
+}
+.cartView h3{
+    text-align: justify;
+    width: 100%;
+}
+
+.checkout{
+    padding: var(--margin);
+    margin-left: calc(var(--margin)*2);
+    margin-right: calc(var(--margin)*2);
+    width: 30%;
+    border: 1px solid #dddddd;
+    color: var(--dark);
+
+   
+}
+.checkout *{
+    margin-bottom: var(--margin);
+}
+.checkout div div{
+    background-color: var(--dark);
+    height: 40px;
+    color: var(--light);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: var(--fontsize);
+
+}
+
+.cartOne{
+    display: flex;
+    border: 1px solid #dddddd;
+    width: 100%;
+    margin-left: var(--margin);
+    margin-right: var(--margin);
+
+    
+}
+
+.cartOne .prod{
+    width: 60%;
+    margin-top: var(--margin);
+    margin-left: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+
+   
+
+
+
+}
+
+.cartOne .prod *{
+    margin: 3px;
+    padding: 0px;
+}
+.cartOne .prod .pn{
+    font-size: calc(var(--fontsize)*0.8);
+
+}
+.cartOne .prod .pp{
+
+    filter: blur(0.5px);
+
+}
+.cartOne img{
+    height: 100px;
+    width: 100px;
+    border-radius: var(--margin);
+    margin: var(--margin);
+
+   
+}
+.cartOne .quanView{
+    width: 20%;
+    height: 100px;
+    margin-top: var(--margin);
+    
+}
+.cartOne .quanView *{
+    margin: 3px;
+}
+.cartOne .quanView h4{
+
+    font-size: calc(var(--fontsize)*0.6);
+
+}
+
+.cartOne .quanView .quan{
+    margin-top:20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid var(--dark);
+    
+
+}
+.cartOne .quanView .quan input{
+  font-size: var(--fontsize);
+  width: 40px;
+  border:0px solid white
+    
+
+}
+.cartOne .quanView .quan *{
+    
+    margin-right: 5px;
+}
+
+.cartOne div Input{
+   
+    width: 40px;
+    height: 25px;
+    font-size: calc(var(--fontsize)*0.5);
+    text-align: center;
+
+}
+
+.cartOne .delete{
+    
+    
+    margin-top: var(--margin);
+    margin-right: 5px;
+    width: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+@media (max-width:576px) {
+    
+.cart{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items:flex-start;
+    min-height: 0px;
+    width: 100%;
+    text-align: justify;
+    color: var(--dark);
+}
+
+
+.cart *{
+
+    margin-bottom:var(--margin);
+}
+
+.cartView{
+    display: flex;
+    flex-direction: column;
+    justify-content:flex-start;
+    align-items: flex-start;
+    min-height: 0px;
+    width: 100%;
+    text-align: justify;
+    padding: 0px;
+    color: var(--dark);
+}
+.cartView h3{
+    text-align: justify;
+    width: 100%;
+}
+
+.checkout{
+    padding: var(--margin);
+    margin-left: 0px;
+    margin-right: calc(var(--margin)*2);
+    width: 100%;
+    border: 1px solid #dddddd;
+    color: var(--dark);
+
+   
+}
+.checkout *{
+    margin-bottom: var(--margin);
+}
+.checkout div div{
+    background-color: var(--dark);
+    height: 40px;
+    color: var(--light);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: var(--fontsize);
+
+}
+
+.cartOne{
+
+    width: 100%;
+    margin-left: 0px;
+    margin-right: 0px;
+
+    
+}
+
+.cartOne .prod{
+    width:70%;
+    margin-top: var(--margin);
+    margin-left: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+
+}
+
+.cartOne .prod *{
+    margin: 0px;
+    padding: 0px;
+}
+.cartOne .prod .pn{
+    font-size: calc(var(--fontsize));
+
+}
+.cartOne .prod .pp{
+
+    filter: blur(0.5px);
+
+}
+.cartOne img{
+    height: 100px;
+    width: 80px;
+    border-radius: var(--margin);
+    margin: var(--margin);
+
+   
+}
+.cartOne .quanView{
+    width: 30%;
+    height: 100px;
+    margin-top: var(--margin);
+    
+}
+.cartOne .quanView *{
+    margin: 0px;
+    font-size: var(--fontsize);
+}
+.cartOne .quanView h4{
+
+    font-size: calc(var(--fontsize)*0.6);
+
+}
+
+.cartOne .quanView .quan{
+    margin-top:30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid var(--dark);
+    
+
+}
+.cartOne .quanView .quan input{
+  font-size: var(--fontsize);
+  width: 40px;
+  border:0px solid white
+    
+
+}
+.cartOne .quanView .quan *{
+    
+    margin-right: 5px;
+}
+
+.cartOne div Input{
+   
+    width: 40px;
+    height: 25px;
+    font-size: calc(var(--fontsize)*0.5);
+    text-align: center;
+
+}
+
+.cartOne .delete{
+    
+
+    margin-top: var(--margin);
+    width: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+  }
+  
+  @media  (max-width:1100px) {
+
+       
+.cart{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items:flex-start;
+    min-height: 0px;
+    width: 100%;
+    text-align: justify;
+    color: var(--dark);
+}
+
+
+.cart *{
+
+    margin-bottom:var(--margin);
+}
+
+.cartView{
+    display: flex;
+    flex-direction: column;
+    justify-content:flex-start;
+    align-items: flex-start;
+    min-height: 0px;
+    width: 100%;
+    text-align: justify;
+    padding: 0px;
+    color: var(--dark);
+}
+.cartView h3{
+    text-align: justify;
+    width: 100%;
+}
+
+.checkout{
+    padding: var(--margin);
+    margin-left: 0px;
+    margin-right: calc(var(--margin)*2);
+    width: 100%;
+    border: 1px solid #dddddd;
+    color: var(--dark);
+
+   
+}
+.checkout *{
+    margin-bottom: var(--margin);
+}
+.checkout div div{
+    background-color: var(--dark);
+    height: 40px;
+    color: var(--light);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: var(--fontsize);
+
+}
+
+.cartOne{
+
+    width: 100%;
+    margin-left: 0px;
+    margin-right: 0px;
+
+    
+}
+
+.cartOne .prod{
+    width:70%;
+    margin-top: var(--margin);
+    margin-left: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+
+}
+
+.cartOne .prod *{
+    margin: 0px;
+    padding: 0px;
+}
+.cartOne .prod .pn{
+    font-size: calc(var(--fontsize));
+
+}
+.cartOne .prod .pp{
+
+    filter: blur(0.5px);
+
+}
+.cartOne img{
+    height: 100px;
+    width: 80px;
+    border-radius: var(--margin);
+    margin: var(--margin);
+
+   
+}
+.cartOne .quanView{
+    width: 30%;
+    height: 100px;
+    margin-top: var(--margin);
+    
+}
+.cartOne .quanView *{
+    margin: 0px;
+    font-size: var(--fontsize);
+}
+.cartOne .quanView h4{
+
+    font-size: calc(var(--fontsize)*0.6);
+
+}
+
+.cartOne .quanView .quan{
+    margin-top:30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid var(--dark);
+    
+
+}
+.cartOne .quanView .quan input{
+  font-size: var(--fontsize);
+  width: 40px;
+  border:0px solid white
+    
+
+}
+.cartOne .quanView .quan *{
+    
+    margin-right: 5px;
+}
+
+.cartOne div Input{
+   
+    width: 40px;
+    height: 25px;
+    font-size: calc(var(--fontsize)*0.5);
+    text-align: center;
+
+}
+
+.cartOne .delete{
+    
+    margin-right: var(--margin);
+    margin-top: var(--margin);
+    width: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+    
+
+
+   
+    
+    
+  }
+  
