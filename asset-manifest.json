@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/EShop/static/css/main.0d74416b.css",
+    "main.js": "/EShop/static/js/main.d36890cf.js",
+    "static/js/787.3bed6155.chunk.js": "/EShop/static/js/787.3bed6155.chunk.js",
+    "static/media/10865880_18899269.jpg": "/EShop/static/media/10865880_18899269.71b7dbd9c14483236540.jpg",
+    "static/media/2881088_205.jpg": "/EShop/static/media/2881088_205.bbb4b45e6cfa83ed54b3.jpg",
+    "static/media/a-discount-2986181.jpg": "/EShop/static/media/a-discount-2986181.7f8f8e1bc9189ddabc34.jpg",
+    "static/media/Roboto-Medium.ttf": "/EShop/static/media/Roboto-Medium.7c8d04cd831df3033c8a.ttf",
+    "static/media/Roboto-Thin.ttf": "/EShop/static/media/Roboto-Thin.a732a12eb07742232407.ttf",
+    "static/media/Roboto-Regular.ttf": "/EShop/static/media/Roboto-Regular.fc2b5060f7accec5cf74.ttf",
+    "static/media/Roboto-Black.ttf": "/EShop/static/media/Roboto-Black.cf56c1b149d0a5e8d7c6.ttf",
+    "static/media/Roboto-Bold.ttf": "/EShop/static/media/Roboto-Bold.f80816a5455d171f948d.ttf",
+    "static/media/images (13).jpeg": "/EShop/static/media/images (13).bac9c82cf73d09e270c5.jpeg",
+    "index.html": "/EShop/index.html",
+    "main.0d74416b.css.map": "/EShop/static/css/main.0d74416b.css.map",
+    "main.d36890cf.js.map": "/EShop/static/js/main.d36890cf.js.map",
+    "787.3bed6155.chunk.js.map": "/EShop/static/js/787.3bed6155.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.0d74416b.css",
+    "static/js/main.d36890cf.js"
+  ]
+}
