@@ -6,9 +6,9 @@ function TopSeasonal(props:any){
     return (
         <div className='layout'>
             
-            <h3 style={{marginBottom:'0px'}}>{props.viewName}</h3>
+            <h2 style={{marginBottom:'0px'}}>{props.viewName}</h2>
             
-           <div className='View' style={{marginTop:'0px'}}>
+           <div className='scrollView' style={{marginTop:'0px'}}>
 
             <Seasonal image={productImg} productName='Insecticide'/>
             <Seasonal image={productImg} productName='Insecticide'/>

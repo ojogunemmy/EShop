@@ -29,6 +29,7 @@ function ForgotPassword(){
             handleLoad()
         }
      
+     <div className='mainSizing'>
         <Helmet>
             <title>ESHOP | Password Recovery</title>
         </Helmet>
@@ -54,6 +55,8 @@ function ForgotPassword(){
        
         </form>
        </div>
+     </div>
+       
 
         </>
        

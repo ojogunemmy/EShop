@@ -7,9 +7,9 @@ function ProductView(props:any){
     return (
         <div className='layout'>
             
-            <h3>Suggestions</h3>
+            <h2>SUGGESTIONS</h2>
             
-           <div className='View'>
+           <div className='scrollView'>
 
             <ProductOneDefinition productName='Raid' productImage={productImg} price='500' rating='3'/>
             <ProductOneDefinition productName='Raid' productImage={productImg} price='500' rating='1'/>
@@ -18,22 +18,11 @@ function ProductView(props:any){
             
             <ProductOneDefinition productName='Raid' productImage={productImg} price='500' rating='4'/>
             
-            <ProductOneDefinition productName='Raid' productImage={productImg} price='500' rating='5'/>
+            <ProductOneDefinition productName='Raid' productImage={productImg} price='500' rating='1'/>
             
             <ProductOneDefinition productName='Raid' productImage={productImg} price='500' rating='3'/>
             
             <ProductOneDefinition productName='Raid' productImage={productImg} price='500' rating='2'/>
-            
-            <ProductOneDefinition productName='Raid' productImage={productImg} price='500' rating='3'/>
-            <ProductOneDefinition productName='Raid' productImage={productImg} price='500' rating='1'/>
-            
-            <ProductOneDefinition productName='Raid' productImage={productImg} price='500' rating='1'/>
-            
-            <ProductOneDefinition productName='Raid' productImage={productImg} price='500' rating='4'/>
-            
-            <ProductOneDefinition productName='Raid' productImage={productImg} price='500' rating='5'/>
-            
-            <ProductOneDefinition productName='Raid' productImage={productImg} price='500' rating='3'/>
             
             <ProductOneDefinition productName='Raid' productImage={productImg} price='500' rating='2'/>
 

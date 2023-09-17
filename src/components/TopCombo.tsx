@@ -8,7 +8,7 @@ function TopCombo(props:any){
             
             <h3 style={{marginBottom:'0px'}}>{props.viewName}</h3>
            
-           <div className='View' style={{marginTop:'0px'}}>
+           <div className='scrollView' style={{marginTop:'0px'}}>
 
 
             <Combo image={Com} productName='Insecticide'/>

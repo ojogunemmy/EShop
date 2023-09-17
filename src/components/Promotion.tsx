@@ -1,4 +1,4 @@
-import React,{useState,useEffect} from 'react'
+import React,{useState} from 'react'
 import pic1 from './images/a-discount-2986181.jpg'
 import pic2 from './images/10865880_18899269.jpg'
 import pic3 from './images/2881088_205.jpg'
@@ -33,17 +33,15 @@ function Promotion(props:any){
             },10000)
 
             return(
-                <div style={{width:'100%'}}>
-                <img src={imgs[imgSrc]} style={{width:'100%',height:'200px'}} alt="promotion"  />
-                </div>
+                <>
+                <img src={imgs[imgSrc]} style={{width:'100%',height:'200px',aspectRatio:'16/9'}} alt="promotion"  />
+                </>
             )
 
     }
             
         return(
             <>
-
-
 
               {
                

@@ -7,7 +7,7 @@ import '../components/css/Home.css'
 function SignupPage(){
     return(
        
-        <div id='content'>
+        <div className='mainSizing'>
             <Signup/>
         </div>
         

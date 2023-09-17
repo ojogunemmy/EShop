@@ -8,7 +8,7 @@ function SigninPage(){
        
             
        
-        <div id='content'>
+        <div className='mainSizing'>
             <Signin/>
         </div>
       

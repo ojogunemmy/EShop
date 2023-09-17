@@ -3,12 +3,16 @@ import BrandView from './Brands';
 import pic from './images/images (13).jpeg'
 
 function TopBrands(){
+
+   
+
+  
     return (
         <div className='layout'>
             
-           <h3>Top Brands</h3>
+           <h2>BRANDS</h2>
             
-           <div className='View'>
+           <div className='scrollView'>
 
            <BrandView image={pic} brand='May and Baker'/>
            <BrandView image={pic}brand='Raid'/>

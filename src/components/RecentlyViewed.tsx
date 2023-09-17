@@ -13,9 +13,9 @@ function RecentlyViewed(props:any){
     return (
         <div className='layout'>
           
-            <h3 style={{marginBottom:'0px',}}>{props.viewName}</h3>
+            <h2 style={{marginBottom:'0px',}}>{props.viewName}</h2>
             
-           <div className='View' style={{marginTop:'0px'}}>
+           <div className='scrollView' style={{marginTop:'0px'}}>
 
             <Recently image={productImg} productName='insecticide'/>
             <Recently image={productImg} productName='insecticide'/>

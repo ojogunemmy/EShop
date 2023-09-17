@@ -12,7 +12,7 @@ const del:React.CSSProperties ={
     top:'-10%',
     backgroundColor:'#dddddd',
     height:'20px',
-    width:'30px',
+    width:'40px',
     display:'flex',
     padding:'2px',
     zIndex:'-1',

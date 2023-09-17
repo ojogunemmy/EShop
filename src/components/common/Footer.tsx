@@ -33,14 +33,48 @@ function Footer():JSX.Element{
             
             <ul className="quicklinks">
                 <h2>CATEGORY</h2>
-                <Link to="/kkk" className="rmd">Groceries</Link>
+            
+            
+                <Link to='' className="rmd" >Electronics</Link>
                 <hr />
+                <Link to='' className="rmd" >Fashion and Apparel</Link>
+                <hr />
+                <Link to='' className="rmd" >Home and Furniture</Link>
+                <hr />
+                <Link to='' className="rmd" >Food and Groceries</Link>
+                <hr />
+                <Link to='' className="rmd" >Jewelry and Watches</Link>
+                <hr />
+                <Link to='' className="rmd" >Pets and Pet Supplies</Link>
+                <hr />
+                <Link to='' className="rmd" >Office and Stationery</Link>
+                <hr />
+                <Link to='' className="rmd" >Art and Crafts</Link>
+                <hr />
+                <Link to='' className="rmd" >Baby and Maternity</Link>
+                <hr />
+                <Link to='' className="rmd" > Gifts and Occasions</Link>
+               
                
             </ul>
 
             
-            <div className='members'>
+            <div className='quicklinks'>
                 <h2>ABOUT US</h2>
+                <Link to="/About" className="rmd">About EShop</Link>
+                <hr />
+                <Link to="/About" className="rmd">Terms and Conditions</Link>
+                <hr />
+                <Link to="/About" className="rmd">Privacy Policy</Link>
+                <hr />
+                <Link to="/About" className="rmd">Shipping and Delivery</Link>
+                <hr />
+                <Link to="/About" className="rmd">Return Policy</Link>
+                <hr />
+                <Link to="/About" className="rmd">Payment and Billing</Link>
+               
+
+
                
             </div>
 

@@ -69,13 +69,20 @@ function ReRender(){
 }
 
 
-function ListProduct(){
-    return (
-        <div className='layout'>
-           
-            <h2>PRODUCTS</h2>
-           
+function SpecificView(props:any){
+    // const [view,setView] = useState(false)
+    // function DisplayFilter(e:any){
 
+    //     setView(true)
+
+    // }
+
+    return (
+        <div className='slayout'>
+
+            <div className='fill'>
+            <h2>PRODUCTS</h2>
+            </div>
             <ReRender/>
           
            
@@ -83,10 +90,11 @@ function ListProduct(){
             <button onClick={x=>handleNext(x.currentTarget.innerText)}  style={{borderRadius:'2px',padding:'4px',margin:'5px',display:'flex',justifyContent:'center',alignItems:'center',color:'var(--light)',backgroundColor:'var(--dark)'}} ><GrFormPrevious/>Prev</button>
             <button onClick={x=>handleNext(x.currentTarget.innerText)}  style={{borderRadius:'2px',padding:'4px',margin:'5px',display:'flex',justifyContent:'center',alignItems:'center',color:'var(--light)',backgroundColor:'var(--dark)'}}>Next<MdNavigateNext/></button>
            </div>
+           
         </div>
 
     );
 
 }
 
-export default ListProduct;
+export default  SpecificView;

@@ -6,9 +6,14 @@ function Topsales(){
     return (
         <div className='layout'>
             
-           <h3>Hot Sales</h3>
+           <h2>HOT SALES</h2>
             
-           <div className='View'>
+           <div className='scrollView'>
+           <CategorSuggestionView categoryImage={top} category='Insecticide'/>
+           <CategorSuggestionView categoryImage={top} category='Insecticide'/>
+           <CategorSuggestionView categoryImage={top} category='Insecticide'/>
+           <CategorSuggestionView categoryImage={top} category='Insecticide'/>
+           <CategorSuggestionView categoryImage={top} category='Insecticide'/>
            <CategorSuggestionView categoryImage={top} category='Insecticide'/>
            <CategorSuggestionView categoryImage={top} category='Insecticide'/>
            <CategorSuggestionView categoryImage={top} category='Insecticide'/>

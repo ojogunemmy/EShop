@@ -10,7 +10,7 @@ import Promotion from '../components/Promotion';
 
 function Home(){
    return(
-        <div id='content'>
+        <div className='mainSizing'>
             <Promotion/>
             <Topsales/>
             <TopBrands/>

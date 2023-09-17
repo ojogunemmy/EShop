@@ -3,12 +3,63 @@ import Input from './Inputs'
 import { Link,Outlet } from 'react-router-dom'
 import ReCAPTCHA from "react-google-recaptcha"
 import { AuthenticationStatus } from './App'
+import { verify } from 'crypto'
+
+
+interface entries{
+
+    token:string,
+    email:string,
+    password:string,
+
+}
 
 function Signin(){
     const [token,setToken] = useState('')
     const {isLoggedIn,setIsLoggedIn} = useContext(AuthenticationStatus)
     const [email,setEmail] = useState('')
-    const [password,setPassword] = useState(0)
+    const [password,setPassword] = useState('')
+
+    
+    //Errors state
+    const [tokeError,setTokenError] = useState('')
+    const [emailError,setEmailError] = useState('')
+    const [passwordError,setPasswordError] = useState('')
+
+    function Verification(value:entries){
+      
+        
+        // Email Check
+        if(value.email === ''){
+            setEmailError('No Email Entered')
+
+        }else{
+            setEmailError('')
+        }
+
+        // PassWord check
+        if(value.password === ''){
+            setPasswordError('Enter your Password ')
+
+        }else{
+            setPasswordError('')
+        }
+
+      
+        //Token check
+        if(value.token === ''){
+            setTokenError('confirm you are not a robot')
+        }else{
+            setTokenError('')
+        }
+    
+       setTimeout(()=>{
+
+            setToken('')
+            
+        },10000)
+
+    }
 
 
 
@@ -22,28 +73,37 @@ function Signin(){
         e.preventDefault()
        
         console.log({
-            authToken:token,
-            userEmail:email,
-            userPassword:password
+            token:token,
+            email:email,
+            password:password
 
         })
-        setIsLoggedIn(true)
+
+        Verification({
+            token:token,
+            email:email,
+            password:password
+
+        })
+        setIsLoggedIn({name:'emco',id:'ksdkjsksdks',status:true})
     }
-        
+    
+   
       
        
 
 
     return (
         <div className='authView'>
+           
        
         <form className='form' onSubmit={handleSubmit}>
         <h2>ESHOP</h2>
         <h3>Experience a World of Endless Possibilities at Our Ecommerce Hub</h3>
         
-        <Input label='Email' onChange={(e:any)=>setEmail(e.target.value)} type='text'/>
+        <Input label='Email' onChange={(e:any)=>setEmail(e.target.value)} type='text' error={emailError}/>
         
-        <Input label='Password' onChange={(e:any)=>setPassword(e.target.value)} type='password' />
+        <Input label='Password' onChange={(e:any)=>setPassword(e.target.value)} type='password' error={passwordError}/>
         <p  style={{textAlign:'right',marginTop:'var(--margin)',width:'100%'}}><Link to='/Forgot' style={{textDecoration:'none',color:'var(--info)'}}>Forgot password</Link></p>
         <div style={{width:'100%',marginTop:'var(--margin)',marginBottom:'var(--margin)'}}>
 
@@ -51,7 +111,13 @@ function Signin(){
        sitekey="6LdohtonAAAAAPgmQvvu1FhzokMPpNqQ1q2iFu16"
        type='image'
        onChange={handleVerify}
+      
        />
+       <div style={tokeError!==''?{ display:'block',color:'red',width:'100%',fontSize:'10px',textAlign:'left',padding:'2px'}:{display:'none'}}>
+            {
+                tokeError
+            }
+        </div>
        </div>
 
        

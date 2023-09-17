@@ -3,7 +3,7 @@ import { Link,Outlet} from 'react-router-dom';
 
 function NotFound(){
     return (<>
-    <div>
+    <div className='mainSizing'>
         <p>404 page Not found
             
         <Link to="/"> Go Home</Link>

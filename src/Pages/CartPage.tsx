@@ -10,12 +10,12 @@ function CartList(props:any){
    
         
         
-        <div id='content'>
+        <div className='mainSizing'>
 
            <Cart cart={[1]}/>
-           <RecentlyViewed viewName='Viewed Recently'/>
+           <RecentlyViewed viewName='VIEWED'/>
            <Topsales/>
-           <TopSeasonal viewName='Seasonal product'/>
+           <TopSeasonal viewName='SEASONAL'/>
 
             
         </div>

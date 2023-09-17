@@ -6,6 +6,7 @@ import './components/css/footer.css'
 import './components/css/Cart.css'
 import './components/css/Home.css'
 import './components/css/Details.css'
+import './components/css/Others.css'
 
 
 

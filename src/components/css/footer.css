@@ -143,6 +143,7 @@
   }
 
   .findUs h2{
+    color: var(--light);
     margin-top: 0px;
     margin-bottom: var(--margin);
   }
@@ -161,6 +162,16 @@
     line-height:0.5cm;
 
   }
+
+  .question{
+    z-index: 1;
+    position: fixed;
+    bottom: 30px;
+    right:30px;
+    filter: sepia(20%);
+    
+  }
+
 
 
   @media (max-width:576px) {

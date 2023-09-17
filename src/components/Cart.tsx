@@ -22,7 +22,9 @@ function CartLoaded(props:any){
         <div className='cartView'>
 
             <div className='cart'>
-                <h3 style={{marginBottom:'var(--margin)'}}>Cart</h3>
+                <h2 style={{marginBottom:'var(--margin)'}}>CART</h2>
+                <CartOne image={pic} productName='Deep Freezer 12ml' price={5000000000} discount= {-5}/>
+                <CartOne image={pic} productName='Raid ttsyydsgshhghdghghghsdhghsshhhsdhgdghg' price={500} discount= {-5}/>
                 <CartOne image={pic} productName='Raid ttsyydsgshhghdghghghsdhghsshhhsdhgdghg' price={500} discount= {-5}/>
             </div>
             <div className='checkout'>
@@ -47,12 +49,12 @@ function Cart(props:any){
     const cart:ProductDefinition[] = props.cart
    
     return(
-       <div style={{width:'90%'}}>
+       <>
          {
             cart.length === 0 ? <CartEmpty/> : <CartLoaded/>
          }
 
-       </div>
+       </>
        
 
     )

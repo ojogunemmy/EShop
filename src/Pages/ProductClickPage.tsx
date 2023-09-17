@@ -10,10 +10,10 @@ function ProductFullDatails(props:any){
        
         
         
-        <div id='content'>
+        <div className='mainSizing'>
             <Detials productImage={prod} rating='' reviews=''/>
-            <TopCombo viewName='Combo product'/>
-            <TopSeasonal viewName='Seasonal product'/> 
+            <TopCombo viewName='COMBO'/>
+            <TopSeasonal viewName='SEASONAL'/> 
         </div>
      
     )

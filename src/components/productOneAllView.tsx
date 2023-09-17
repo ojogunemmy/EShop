@@ -4,7 +4,7 @@ import Fav from './images/favorite.png'
 import noFav from  './images/noFavourite.png'
 import { CartListNumber } from './App'
 
-function ProductOneDefinition(props:any){
+function ProdOne(props:any){
 
     const {cart,setCart} = useContext(CartListNumber)
   
@@ -17,20 +17,17 @@ function ProductOneDefinition(props:any){
         return v.slice(0,30)
 
     }
-
     const handlaAdd = (e:any)=>{
-        setCart([...cart,{pn:props.productName,
-            pp:props.price,
-            pq:1,
-            pc:'',
-            ps:'',
-            pid:props.id}])
+        cart.pop()
+        setCart(cart)
+
+            
 
     }
   
     return  (
         
-        <div className='suggestion' key={props.id} style={props.rating==='0'?{visibility:'hidden',width:'0px',height:'fit-content',backgroundColor:'green'}:{visibility:'visible'}} >
+        <div className='imageViews' key={props.id} style={props.rating==='0'?{visibility:'hidden',width:'0px',height:'fit-content',backgroundColor:'green'}:{visibility:'visible'}} >
         <img src={props.productImage}  alt='product img' className='prod_img'/>
         
         <div className='prodView1'>
@@ -39,10 +36,10 @@ function ProductOneDefinition(props:any){
         </div>
         <div className='prodView2'>
         
-            <div style={props.rating === 0?{display:'none'}:{display:'flex'}}>
+            <div>
                 
                 {
-                    props.rating >=1?<img src={Fav} alt='nil' />:<img src={noFav} alt='nil'/>
+                    props.rating >=1?<img src={Fav} alt='nil' />: <img src={noFav} alt='nil'/>
                    
                 }
                 {
@@ -70,4 +67,4 @@ function ProductOneDefinition(props:any){
 
 }
 
-export default ProductOneDefinition;
+export default ProdOne;

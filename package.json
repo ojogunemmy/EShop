@@ -1,7 +1,7 @@
 {
   "name": "eshop",
   "version": "0.1.0",
-  "homepage": "https://ojogunemmy.github.io/ESHOP",
+  "homepage": "https://ojogunemmy.github.io/EShop",
   "private": true,
   "dependencies": {
     "-": "^0.0.1",

@@ -5,6 +5,18 @@ import ReCAPTCHA from "react-google-recaptcha"
 import { AuthenticationStatus } from './App'
 
 
+interface entries{
+
+    token:string,
+    name:string,
+    email:string,
+    password:string,
+    confirmPassword:string
+
+}
+
+
+
 
 function Signup(){
 
@@ -16,21 +28,91 @@ function Signup(){
     const [confirmPassword,setComfirmPassword] = useState('')
 
     //Errors state
-    // const [tokeError,setTokenError] = useState('')
-    // const [nameError,setNameError] = useState('')
-    // const [emailError,setEmailError] = useState('')
-    // const [passwordError,setPasswordError] = useState('')
-    // const [confirmPasswordError,setComfirmPasswordError] = useState('')
+    const [tokeError,setTokenError] = useState('')
+    const [nameError,setNameError] = useState('')
+    const [emailError,setEmailError] = useState('')
+    const [passwordError,setPasswordError] = useState('')
+    const [confirmPasswordError,setConfirmPasswordError] = useState('')
+    function Verification(value:entries){
+         // Name check
+        if(value.name === ''){
+            setNameError('Enter a name')
+
+        }else{
+            setNameError('')
+        }
+        
+        // Email Check
+        if(value.email === ''){
+            setEmailError('No Email Entered')
+
+        }else{
+            setEmailError('')
+        }
+
+        // PassWord check
+        if(value.password === ''){
+            setPasswordError('Enter your Password ')
+
+        }else{
+            setPasswordError('')
+        }
+
+         // Comfirm Passwod check
+         if(value.confirmPassword !== value.password){
+            setConfirmPasswordError('Confirm password does not match ')
+
+        }else{
+            setConfirmPasswordError('')
+        }
+
+        //Token check
+        if(value.token === ''){
+            setTokenError('confirm you are not a robot')
+        }else{
+            setTokenError('')
+        }
+    
+
+    }
 
 
-    const handleSubmit =(e:any)=>{
+
+    
+
+
+    const handleSubmit =(e:React.FormEvent<HTMLFormElement>)=>{
+
+        e.preventDefault()
+        
        console.log({
-        AuthToken:token,
-        username:name,
-        userEmail:email,
-        userPassword:password,
+        token:token,
+        name:name,
+        email:email,
+        password:password,
+        confirmPassword:confirmPassword
 
        })
+
+       Verification({
+        token:token,
+        name:name,
+        email:email,
+        password:password,
+        confirmPassword:confirmPassword
+
+       })
+       
+
+       setTimeout(()=>{
+
+        setToken('')
+        
+       },10000)
+
+
+
+
     
     }
 
@@ -46,19 +128,25 @@ function Signup(){
         <h2>ESHOP</h2>
         <h3>Unlock a World of Endless Possibilities at Our Ecommerce Hub</h3>
         
-        <Input label='Name' type='text' onChange={(e:any)=>setName(e.target.value)} error=''/>
-        <Input label='Email' onChange={(e:any)=>setEmail(e.target.value)} type='text'/>
-        <Input label='Password'   onChange={(e:any)=>setPassword(e.target.value)} type='password'/>
-        <Input label='Comfirm Password'  onChange={(e:any)=>setComfirmPassword(e.target.value)} type='password'/>
+        <Input label='Name' type='text'  onChange={(e:any)=>setName(e.target.value)}  error={nameError}/>
+        <Input label='Email' onChange={(e:any)=>setEmail(e.target.value)} type='text' error={emailError}/>
+        <Input label='Password'   onChange={(e:any)=>setPassword(e.target.value)} type='password' error={passwordError}/>
+        <Input label='Comfirm Password'  onChange={(e:any)=>setComfirmPassword(e.target.value)} type='password' error={confirmPasswordError}/>
         <p style={{textAlign:'left',marginTop:'var(--margin)'}}>By clicking create account you agree to platform. <Link to='/terms' style={{textDecoration:'none',color:'var(--info)'}}> Terms and conditions</Link></p>
          
         <div style={{width:'100%',marginTop:'var(--margin)',marginBottom:'var(--margin)'}}>
+        
 
         <ReCAPTCHA style={{width:'100%',marginTop:'var(--margin)'}} 
         sitekey="6LdohtonAAAAAPgmQvvu1FhzokMPpNqQ1q2iFu16"
         type='image'
         onChange={handleVerify}
          />
+         <div style={tokeError!==''?{ display:'block',color:'red',width:'100%',fontSize:'10px',textAlign:'left',padding:'2px'}:{display:'none'}}>
+            {
+                tokeError
+            }
+        </div>
        </div>
 
        
