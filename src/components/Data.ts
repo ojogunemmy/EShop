@@ -1,6 +1,8 @@
 import ProductDefinition from './ProductDefinition';
 
 
+
+
 var database:ProductDefinition[] =[]
 var cart:ProductDefinition[] = []
 

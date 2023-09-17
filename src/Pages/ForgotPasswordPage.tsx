@@ -45,7 +45,7 @@ function ForgotPassword(){
         <div style={{width:'100%',marginTop:'var(--margin)',marginBottom:'var(--margin)'}}>
 
             <ReCAPTCHA style={{width:'100%',marginTop:'var(--margin)'}} 
-            sitekey="6LdohtonAAAAAPgmQvvu1FhzokMPpNqQ1q2iFu16"
+            sitekey={process.env.REACT_APP_RECAPTCHA}
             type='image'
             onChange={handleVerify}
             />

@@ -3,7 +3,8 @@ import Input from './Inputs'
 import { Link,Outlet } from 'react-router-dom'
 import ReCAPTCHA from "react-google-recaptcha"
 import { AuthenticationStatus } from './App'
-import { verify } from 'crypto'
+
+
 
 
 interface entries{
@@ -14,7 +15,11 @@ interface entries{
 
 }
 
+
+
 function Signin(){
+    
+    const envr = process.env.REACT_APP_RECAPTCHA
     const [token,setToken] = useState('')
     const {isLoggedIn,setIsLoggedIn} = useContext(AuthenticationStatus)
     const [email,setEmail] = useState('')
@@ -108,7 +113,7 @@ function Signin(){
         <div style={{width:'100%',marginTop:'var(--margin)',marginBottom:'var(--margin)'}}>
 
        <ReCAPTCHA style={{width:'100%',marginTop:'var(--margin)'}} 
-       sitekey="6LdohtonAAAAAPgmQvvu1FhzokMPpNqQ1q2iFu16"
+       sitekey={process.env.REACT_APP_RECAPTCHA}
        type='image'
        onChange={handleVerify}
       
