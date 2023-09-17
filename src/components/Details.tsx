@@ -64,21 +64,21 @@ function Details(props:any){
              
                <div className='delivery'>
                 <div>
-                    <h3>Delivery details</h3>
+                    <h2>Delivery details</h2>
                     <div>
                         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur ipsa asperiores harum sapiente dignissimos autem! Est voluptatum rem cupiditate dolorum perferendis, laboriosam aut laudantium, reprehenderit libero asperiores rerum voluptatibus magni eum facere quae provident ex nisi, dolorem distinctio. Labore harum amet iusto id hic. Architecto, nihil? Laboriosam libero fugiat itaque, excepturi nemo maxime ipsam, rem saepe voluptatem quaerat accusantium.
                     </div>
 
                 </div>
                 <div>
-                  <h3>Delivery Policy</h3>
+                  <h2>Delivery Policy</h2>
                   <div>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum beatae mollitia, quo nobis quas accusamus dignissimos voluptatem dolorem amet earum?
                   </div>
                   
                 </div>
                 <div>
-                   <h3>Return policy</h3> 
+                   <h2>Return policy</h2> 
                    <div>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Et enim rerum vero explicabo sunt expedita aut voluptas a corrupti accusamus?
                    </div>

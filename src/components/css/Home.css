@@ -95,7 +95,7 @@ body{
 img{
   width: 100%;
   height: 100%;
-  user-select: none;
+  
 }
 
 
@@ -341,15 +341,15 @@ input{
   display: inline-block;
   color: var(--dark);
   margin: var(--margin);
-  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
+
 }
 .suggestion{
   width: 160px;
   display: inline-block;
   padding: 10px; 
   margin: var(--margin);
-  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px; 
-   color: var(--dark);
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;   color: var(--dark);
 }
 .suggestion *{
  text-align: center;
@@ -366,12 +366,11 @@ input{
  }
 
 .imageViews{
-  width: 160px;
-display: inline-block;
+  width: 170px;
+  display: inline-block;
   padding: 10px; 
   margin: var(--margin);
-  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px; 
-   color: var(--dark);
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;   color: var(--dark);
 }
 .imageViews *{
  text-align: center;
@@ -384,6 +383,7 @@ display: inline-block;
   text-align: center;
   font-size:var(--fontsize);
   margin-top: calc(var(--margin)*0.5);
+  
 
  }
 .prod_img:hover{
@@ -391,9 +391,13 @@ display: inline-block;
   transition: cubic-bezier(0.075, 0.82, 0.165, 1);
  }
 .prod_img{
-  height: 150px;
+  height: 120px;
   width: 100%;
   border-radius: 10px;
+  -webkit-user-select: none;  
+  -moz-user-select: none;    
+  -ms-user-select: none;      
+  user-select: none; 
 }
 h2{
   text-align: left;
@@ -443,6 +447,8 @@ h2{
     margin-bottom: var(--margin);
     margin-top: var(--margin);
     margin-left: 0px;
+    cursor:grab;
+    
 
 }
 
@@ -466,13 +472,11 @@ h2{
 }
 .brandName{
   font-size: var(--fontsize);
-  background-color: transparent;
   color:inherit;
   height: 50px;
-  justify-content: center;
-  align-items: center;
+  width: fit-content;
   border-radius: 4px;
-  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
   margin: 5px;
 
 }

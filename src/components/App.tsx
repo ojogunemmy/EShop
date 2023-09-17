@@ -178,15 +178,19 @@ const mg:CSSProperties = {marginRight:'var(--margin)'}
 
       <Routes>
         <Route path='/' element={<Home/>} ></Route>
-        <Route path='/ESHOP' element={<Home/>} ></Route>
+        <Route path='/EShop' element={<Home/>} ></Route>
         <Route path='*' element={<NotFound/>} ></Route>
         <Route path='/Signup'  element={<SignupPage/>} ></Route>
         <Route path='/Signin'  element={<SigninPage/>} ></Route>\
         <Route path='/MoreDetails'  element={<ProductFullDatails/>} ></Route>
         <Route path='/Forgot'  element={<ForgotPassword/>} ></Route>
         <Route path='/About'  element={<AboutUsPage current={currentPage}/>} ></Route>
-        <Route path='/S'  element={<SpecificsPage/>} ></Route>
+        <Route path='/Specifics'  element={<SpecificsPage/>} ></Route>
         <Route path='/Cart'  element={<CartList/>} ></Route>
+        <Route path='/Category'  element={<SpecificsPage/>} ></Route>
+        <Route path='/Account'  element={<SpecificsPage/>} ></Route>
+        <Route path='/Settings'  element={<SpecificsPage/>} ></Route>
+        
       </Routes>
          
      </div>

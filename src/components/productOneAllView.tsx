@@ -18,8 +18,12 @@ function ProdOne(props:any){
 
     }
     const handlaAdd = (e:any)=>{
-        cart.pop()
-        setCart(cart)
+        setCart([...cart,{pn:props.productName,
+            pp:props.price,
+            pq:1,
+            pc:'',
+            ps:'',
+            pid:props.id}])
 
             
 

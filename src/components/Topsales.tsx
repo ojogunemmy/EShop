@@ -8,7 +8,7 @@ function Topsales(){
             
            <h2>HOT SALES</h2>
             
-           <div className='scrollView'>
+           <div className='scrollView' >
            <CategorSuggestionView categoryImage={top} category='Insecticide'/>
            <CategorSuggestionView categoryImage={top} category='Insecticide'/>
            <CategorSuggestionView categoryImage={top} category='Insecticide'/>

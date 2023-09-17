@@ -1,12 +1,17 @@
 import React from 'react'
+import { Helmet } from 'react-helmet';
 import { Link,Outlet} from 'react-router-dom';
 
 function NotFound(){
-    return (<>
+    return (
+    <>
+    <Helmet>
+        <title>ESHOP | page not found</title>
+    </Helmet>
     <div className='mainSizing'>
         <p>404 page Not found
             
-        <Link to="/"> Go Home</Link>
+        <Link to="/" className='rmd'> Go Home</Link>
         </p>
         
     </div>
