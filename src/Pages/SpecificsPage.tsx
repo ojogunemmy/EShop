@@ -7,7 +7,7 @@ function SpecificsPage(props:any){
     return(
         <>
         <Helmet>
-            <title> ESHOP | Filter {props.data}</title>
+            <title> ESHOP | Filter</title>
 
         </Helmet>
          <div className='mainSizing'>

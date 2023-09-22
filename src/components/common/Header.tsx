@@ -19,8 +19,8 @@ import { AuthenticationStatus, CartListNumber, SideNavBar } from "../App"
 function Header(props:any){
 
     const {side,setSide} = useContext(SideNavBar)
-    const {cart,setCart} = useContext(CartListNumber)
-    const {isLoggedIn,setIsLoggedIn} = useContext(AuthenticationStatus)
+    const {cart} = useContext(CartListNumber)
+    const {isLoggedIn} = useContext(AuthenticationStatus)
     var [close,setClose] = useState(false)
 
     
@@ -67,6 +67,7 @@ function Header(props:any){
         </div>
 
         <div className="group1">
+
         <div>
         
         <Navigation LinkName={<GiShoppingCart size={32}/>} to="/Cart"/>

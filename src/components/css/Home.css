@@ -68,15 +68,54 @@
 body{
   font-family: roboto;
   line-height: 20px;
-  display:block;
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   width:100vw;
   height: 100vh;
   padding: 0px;
   margin: 0px;
   user-select: none;
+  overflow: hidden
 
  
 }
+
+#google_translate_element{
+    
+  width: fit-content;
+  height: fit-content;
+  z-index: 10;
+
+}
+.goog-te-gadget{
+width: fit-content;
+height: fit-content;
+z-index: 10;
+}
+
+#google_translate_element img{
+  display: none;
+}
+#google_translate_element *{
+  font-size: 10px;
+  width: fit-content;
+  height: fit-content;
+  margin-left: 5px;
+  text-decoration:none;
+
+}
+#google_translate_element div{
+  
+  padding-top: 2px;
+  display: flex;
+  justify-content: flex-start;
+ 
+  align-items: center;
+
+}
+
 
 
 .container{
@@ -89,6 +128,7 @@ body{
   grid-template-areas: "nav nav nav"  "content content content " "footer footer footer" "copy copy copy";
   font-family:roboto;
   text-align: center;
+  
 
 
 }
@@ -198,14 +238,17 @@ img{
   flex-basis: 15%;
   font-size: var(--fontsize);
   display:flex;
-  justify-content:flex-start;
+  justify-content:center;
   text-decoration: none;
   align-items: center;
-  height: 50px;
+  height: 100%;
 
 }
 #logo *{
-  height: 40px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .group{
@@ -372,6 +415,7 @@ input{
   padding: 10px; 
   margin: var(--margin);
   box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;   color: var(--dark);
+  
 }
 .imageViews *{
  text-align: center;
@@ -449,10 +493,12 @@ h2{
     margin-top: var(--margin);
     margin-left: 0px;
     cursor:-moz-grab;
+    cursor: grab;
     
     
 
 }
+
 
 .scrollView::-webkit-scrollbar{
   width: 0;
@@ -699,7 +745,7 @@ h2{
     
   }
   #logo{
-    flex-basis: 20%;
+    flex-basis: 50%;
     padding-left: 30px;
   }
   .mainSizing{
@@ -790,7 +836,7 @@ h2{
   }
 
   #logo{
-    flex-basis: 20%;
+    flex-basis: 50%;
     padding-left: 20px;
   }
  

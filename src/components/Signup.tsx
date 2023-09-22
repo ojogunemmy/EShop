@@ -1,8 +1,11 @@
 import React,{useState,useContext} from 'react'
 import Input from './Inputs'
 import { Link,Outlet } from 'react-router-dom'
-import ReCAPTCHA from "react-google-recaptcha"
 import { AuthenticationStatus } from './App'
+import {
+    GoogleReCaptchaProvider,
+    GoogleReCaptcha
+  } from 'react-google-recaptcha-v3';
 
 
 interface entries{
@@ -137,11 +140,9 @@ function Signup(){
         <div style={{width:'100%',marginTop:'var(--margin)',marginBottom:'var(--margin)'}}>
         
 
-        <ReCAPTCHA style={{width:'100%',marginTop:'var(--margin)'}} 
-        sitekey={process.env.REACT_APP_RECAPTCHA}
-        type='image'
-        onChange={handleVerify}
-         />
+        <GoogleReCaptchaProvider reCaptchaKey={process.env.REACT_APP_RECAPTCHA}>
+         <GoogleReCaptcha onVerify={handleVerify} />
+       </GoogleReCaptchaProvider>
          <div style={tokeError!==''?{ display:'block',color:'red',width:'100%',fontSize:'10px',textAlign:'left',padding:'2px'}:{display:'none'}}>
             {
                 tokeError

@@ -166,7 +166,7 @@
   .question{
     z-index: 1;
     position: fixed;
-    bottom: 30px;
+    bottom: 80px;
     right:30px;
     filter: sepia(20%);
     

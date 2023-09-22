@@ -2,23 +2,19 @@ import React from 'react'
 import '../components/css/Cart.css'
 import CartOne from '../components/CartOne'
 import pic from './images/images (13).jpeg'
-
 import ProductDefinition from './ProductDefinition'
 
 function CartEmpty(props:any){
-
+    //Rendered when its an empty 
     return(
         <div className='cart' style={{width:'100%',justifyContent:'center',alignItems:'center',border:'1px solid #dddddd'}}>
-          <div style={{ width:'300px',height:'300px',display:'flex',justifyContent:'center',alignItems:'center'}}>Cart Empty</div>
+          <div style={{ width:'100%',height:'100%',display:'flex',justifyContent:'center',alignItems:'center'}}>Cart Empty</div>
         </div>
     )
-
 }
 function CartLoaded(props:any){
-
+    //Rendered when Products are in the cartListNumber
     return(
-
-        
         <div className='cartView'>
 
             <div className='cart'>
@@ -35,19 +31,13 @@ function CartLoaded(props:any){
                 <div className='addCart'>CHECKOUT</div>
             </div>
             </div>
-           
-
         </div>
     )
-
-
-
 }
 
 function Cart(props:any){
-
     const cart:ProductDefinition[] = props.cart
-   
+    // cart renders based on coditions
     return(
        <>
          {
@@ -55,8 +45,7 @@ function Cart(props:any){
          }
 
        </>
-       
-
+    
     )
 
 }

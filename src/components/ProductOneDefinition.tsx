@@ -2,6 +2,7 @@ import React,{useContext} from 'react'
 import {Link,Outlet} from 'react-router-dom'
 import Fav from './images/favorite.png'
 import noFav from  './images/noFavourite.png'
+import {TbCurrencyNaira} from 'react-icons/tb'
 import { CartListNumber } from './App'
 
 function ProductOneDefinition(props:any){
@@ -35,7 +36,7 @@ function ProductOneDefinition(props:any){
         
         <div className='prodView1'>
             <p className='prodRating'><Link to='/MoreDetails' style={{color:'var(--dark)',textDecoration:'none'}}>{slice(props.productName)}</Link></p>
-            <p className='prodRating'><strong style={{fontSize:'20px'}}>#</strong>{props.price}</p>
+            <p className='prodRating'><strong style={{fontSize:'20px'}}><TbCurrencyNaira size={12}/></strong>{props.price}</p>
         </div>
         <div className='prodView2'>
         

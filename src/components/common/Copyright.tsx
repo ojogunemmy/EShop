@@ -22,7 +22,7 @@ function Copyright(){
                 <a href="https://www.linkedin.com/in/agpaoc-pmawca/" style={{backgroundColor:'var(--light)',height:'20px',width:'20px',borderRadius:'50%',display:'flex',justifyContent:'center',alignItems:'center'}}><FaLinkedin size={14} style={{color:'#007bb5'}}/></a>
                 <a href="https://www.youtube.com/channel/UCyR9M3GyMrY6jvDndt4APjw" style={{backgroundColor:'var(--light)',height:'20px',width:'20px',borderRadius:'50%',display:'flex',justifyContent:'center',alignItems:'center'}}><FaYoutube size={14} style={{color:'#ff0000'}}/></a>  
             </div>
-            {/* <div id="google_translate_element" onClick={e=>Send(e)}></div> */}
+            <div id="google_translate_element" onClick={e=>Send(e)}></div>
 
             <p style={{marginBottom:'0px',fontSize:'var(--fontsize)'}}>© Copyright {year}. All Rights Reserved EShop.</p> 
            

@@ -10,7 +10,7 @@ function ProductFullDatails(props:any){
     return(
        <>
        <Helmet>
-        <title>ESHOP | Detial - {props.name}</title>
+        <title>ESHOP | Detials</title>
        </Helmet>
         <div className='mainSizing'>
             <Detials productImage={prod} rating='' reviews=''/>

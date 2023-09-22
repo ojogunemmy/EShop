@@ -6,7 +6,7 @@ function TopCombo(props:any){
     return (
         <div className='layout'>
             
-            <h3 style={{marginBottom:'0px'}}>{props.viewName}</h3>
+            <h2 style={{marginBottom:'0px'}}>{props.viewName}</h2>
            
            <div className='scrollView' style={{marginTop:'0px'}}>
 

@@ -1,8 +1,10 @@
 import React ,{useContext, useState}from "react";
 import { Helmet } from 'react-helmet'
 import Input from '../components/Inputs'
-import ReCAPTCHA from 'react-google-recaptcha';
-
+import {
+    GoogleReCaptchaProvider,
+    GoogleReCaptcha
+  } from 'react-google-recaptcha-v3';
 
 function ForgotPassword(){
     const [token,setToken] = useState('')
@@ -44,11 +46,9 @@ function ForgotPassword(){
         
         <div style={{width:'100%',marginTop:'var(--margin)',marginBottom:'var(--margin)'}}>
 
-            <ReCAPTCHA style={{width:'100%',marginTop:'var(--margin)'}} 
-            sitekey={process.env.REACT_APP_RECAPTCHA}
-            type='image'
-            onChange={handleVerify}
-            />
+        <GoogleReCaptchaProvider reCaptchaKey={process.env.REACT_APP_RECAPTCHA}>
+         <GoogleReCaptcha onVerify={handleVerify} />
+       </GoogleReCaptchaProvider>
         </div>
        
         <Input type='submit' value='GET NEW PASSWORD'/>
