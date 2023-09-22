@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/EShop/static/css/main.5905ba88.css",
+    "main.css": "/EShop/static/css/main.1fedb4ff.css",
     "main.js": "/EShop/static/js/main.0ced97ff.js",
     "static/js/787.3bed6155.chunk.js": "/EShop/static/js/787.3bed6155.chunk.js",
     "static/media/10865880_18899269.jpg": "/EShop/static/media/10865880_18899269.71b7dbd9c14483236540.jpg",
@@ -13,12 +13,12 @@
     "static/media/Roboto-Bold.ttf": "/EShop/static/media/Roboto-Bold.f80816a5455d171f948d.ttf",
     "static/media/images (13).jpeg": "/EShop/static/media/images (13).bac9c82cf73d09e270c5.jpeg",
     "index.html": "/EShop/index.html",
-    "main.5905ba88.css.map": "/EShop/static/css/main.5905ba88.css.map",
+    "main.1fedb4ff.css.map": "/EShop/static/css/main.1fedb4ff.css.map",
     "main.0ced97ff.js.map": "/EShop/static/js/main.0ced97ff.js.map",
     "787.3bed6155.chunk.js.map": "/EShop/static/js/787.3bed6155.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.5905ba88.css",
+    "static/css/main.1fedb4ff.css",
     "static/js/main.0ced97ff.js"
   ]
 }
